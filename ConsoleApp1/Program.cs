@@ -10,7 +10,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, world!");
+            string myPhrase = "hello computer bloopy bleepy bloop";
+            Console.WriteLine(myPhrase);
+            Console.WriteLine(myPhrase.Contains("computer"));
+
+            // floating point numbers can be increased in precision with the 'double' numeric type
+
+            int a = 5;
+            int b = 2;
+            int c = a / b;
+            Console.WriteLine(c);
+
+            double d = 6;
+            double e = 4;
+            double f = d / e;
+            Console.WriteLine(f);
             Console.ReadLine();
         }
     }
