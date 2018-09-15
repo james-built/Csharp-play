@@ -25,7 +25,30 @@ namespace ConsoleApp1
             double e = 4;
             double f = d / e;
             Console.WriteLine(f);
+
+            // fixed point numbers where the decimal doesn't move are the 'decimal' numeric type
+            List<Secondary> listSec = new List<Secondary>();
+            Secondary sec1 = new Secondary();
+            sec1.i = 1;
+            Secondary sec2 = new Secondary();
+            sec2.i = 2;
+            listSec.Add(sec1);
+            listSec.Add(sec2);
+            foreach(Secondary sec in listSec)
+            {
+                Console.WriteLine(sec.Second("james"));
+            }
+            Console.WriteLine(sec1.Second("james"));
             Console.ReadLine();
+        }
+        
+    }
+    public class Secondary
+    {
+        public int i = 0;
+        public string Second(string name)
+        {
+            return "hello" + i.ToString();
         }
     }
 }
